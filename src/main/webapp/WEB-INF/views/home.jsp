@@ -5,6 +5,7 @@
 	<title>Home</title>
 </head>
 <body>
+<%@ include file="bar/gnb.jsp"%>
 <h1>
 	Hello world!  
 </h1>
