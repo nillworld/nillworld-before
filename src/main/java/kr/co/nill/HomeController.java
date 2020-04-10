@@ -1,4 +1,4 @@
-package co.kr.nill;
+package kr.co.nill;
 
 import java.text.DateFormat;
 import java.util.Date;
