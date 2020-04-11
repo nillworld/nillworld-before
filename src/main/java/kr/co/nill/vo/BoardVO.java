@@ -20,12 +20,13 @@ public class BoardVO {
 
 			select * from tbl_board;
 */
+	private int bno;
 	private String title;
 	private String content;
 	private String writer;
 	private Date regDate;
 	private int viewCnt;
-	private int bno;
+	
 	
 	public int getBno() {
 		return bno;
