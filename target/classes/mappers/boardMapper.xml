@@ -6,9 +6,16 @@
 
 	<!-- 게시물 목록 -->
 	<select id="list" resultType="kr.co.nill.vo.BoardVO">
-	 select
-	  bno, title, content, writer, regDate, viewCnt
-	 from tbl_board
+		select
+		bno, title, content, writer, regDate, viewCnt
+		from tbl_board
 	</select>
+
+	<!-- 게시물 작성 -->
+	<insert id="write" parameterType="kr.co.nill.vo.BoardVO">
+		insert into
+		tbl_board(title, content, writer)
+		values(#{title}, #{content}, #{writer})
+	</insert>
 
 </mapper>
