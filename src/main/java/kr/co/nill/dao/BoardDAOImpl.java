@@ -26,6 +26,7 @@ public class BoardDAOImpl implements BoardDAO {
 		return sql.selectList(namespace + ".list");
 	}
 
+	//게시물 작성
 	@Override
 	public void write(BoardVO vo) throws Exception {
 		// TODO Auto-generated method stub
