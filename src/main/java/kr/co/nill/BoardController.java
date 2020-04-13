@@ -8,6 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import kr.co.nill.service.BoardService;
 import kr.co.nill.vo.BoardVO;
@@ -38,10 +39,19 @@ public class BoardController {
 	// 게시물 작성
 	@RequestMapping(value = "/write", method = RequestMethod.POST)
 	public String postWirte(BoardVO vo) throws Exception {
-	  service.write(vo);
+	  
+	service.write(vo);
 	  
 	  return "redirect:/board/list";
 	}
 	
+	// 게시물 보기
+	@RequestMapping(value = "/view", method = RequestMethod.GET)
+	public void getView(@RequestParam("bno") int bno, Model model) throws Exception {
+		
+		BoardVO vo = service.view(bno);
+		model.addAttribute("view", vo);
+				
+	}
 	
 }

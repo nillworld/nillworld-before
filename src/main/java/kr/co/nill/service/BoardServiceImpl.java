@@ -28,5 +28,11 @@ public class BoardServiceImpl implements BoardService {
 		// TODO Auto-generated method stub
 		dao.write(vo);
 	}
+	
+	// 게시물 조회
+	public BoardVO view(int bno) throws Exception {
+		// TODO Auto-generated method stub
+		return dao.view(bno);
+	}
 
 }
