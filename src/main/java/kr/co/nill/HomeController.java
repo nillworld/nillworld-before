@@ -46,4 +46,9 @@ public class HomeController {
 		return "test";
 	}
 	
+	@RequestMapping(value = "/reference", method = RequestMethod.GET)
+	public String reference() {
+		return "reference";
+	}
+	
 }
