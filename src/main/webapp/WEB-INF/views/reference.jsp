@@ -6,9 +6,9 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
-<link href="/resources/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
+	<%@ include file="bar/gnb.jsp"%>
 <a href="http://bootstrapk.com/css/" > 부트스트랩 CSS </a>
 <a href="https://mangkyu.tistory.com/14" class="btn btn-primary btn-lg" role="button"> Servlet 설명 </a>
 <a href="https://annehouse.tistory.com/120" class="btn btn-primary btn-lg " role="button"> Servlet 설명2 </a>
@@ -21,8 +21,5 @@
 v4실행하면 포트 8080 사용/ 톰캣 구동 먼저하면 v4는 다른 포트 사용 하는듯
 > netstat -a -n -o -p tcp
 > netstat -a -n -o -p tcp
-<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-	<script src="/resources/js/bootstrap.min.js"></script>
 </body>
 </html>

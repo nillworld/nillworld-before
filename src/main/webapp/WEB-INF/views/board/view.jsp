@@ -8,6 +8,7 @@
 <title>게시물 작성</title>
 </head>
 <body>
+	<%@ include file="../bar/gnb.jsp"%>
 	<form method="post">
 
 		<label>제목</label><input type="text" name="title" value="${view.title}" /><br /> 

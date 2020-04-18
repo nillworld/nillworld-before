@@ -9,7 +9,7 @@
 </head>
 <body>
 	<form method="post">
-
+		<%@ include file="../bar/gnb.jsp"%>
 		<label>제목</label><input type="text" name="title" /><br /> 
 		<label>작성자</label><input type="text" name="writer" /><br /> 
 		<label>내용</label><textarea cols="50" rows="5" name="content"></textarea><br />
