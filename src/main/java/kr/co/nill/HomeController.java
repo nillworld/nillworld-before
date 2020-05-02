@@ -41,14 +41,25 @@ public class HomeController {
 		return "bar/gnb";
 	}
 	
-	@RequestMapping(value = "/test", method = RequestMethod.GET)
-	public String test() {
-		return "test";
-	}
 	
 	@RequestMapping(value = "/reference", method = RequestMethod.GET)
 	public String reference() {
 		return "reference";
 	}
 	
+	@RequestMapping(value = "/diary", method = RequestMethod.GET)
+	public String diary() {
+		return "diary";
+	}
+	
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	public String test() {
+		return "test";
+	}
+	
+	@RequestMapping(value = "/test2", method = RequestMethod.GET)
+	public String test2() {
+		return "test2";
+	}
+
 }
