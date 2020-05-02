@@ -51,7 +51,7 @@
 	#floatMenu {
 		position: absolute;
 		width: 50px;
-		height: 25px;
+		height: 20px;
 		cursor: pointer;
 		bottom: 50%;
 		right: 50px;
