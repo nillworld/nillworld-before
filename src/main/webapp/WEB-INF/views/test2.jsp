@@ -9,13 +9,69 @@
 <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
 <script src="/resources/js/bootstrap.min.js"></script>
 <style>
-	body {
-		padding: 100px 100px;
-	}
 	.padding1000{
 		width: 100%;
 		height: 700px;
 	}
+	.main-img{
+		width: 100%;
+		max-width:700px;
+
+	}
+	#noback-img {
+		top: 50%;
+	  	left: 50%;
+	 	transform: translate(-50%,-50%);
+	 	position: absolute;
+	 	z-index: 8;
+	}
+	#pink-img {
+		
+		top: 50%;
+	  	left: 50%;
+	 	transform: translate(-100%,-50.5%);
+	 	position: absolute;
+	 	animation-name: pink-move;
+	 	animation-duration: 2s;
+	  	animation-timing-function: ease-in-out;
+	  	z-index: 7;
+	}
+	#whitepupple-img {
+		
+		top: 50%;
+	  	left: 50%;
+	 	transform: translate(0%,-50%);
+	 	position: absolute;
+	 	animation-name: whitepupple-move;
+	 	animation-duration: 2s;
+	  	animation-timing-function: ease-in-out;
+	}
+	@keyframes pink-move {
+	  0%   {
+	    top: 50%;
+	  	left: 50%;
+	 	transform: translate(-50%,-50.5%);
+	  }
+	  100% {
+	    top: 50%;
+	  	left: 50%;
+	 	transform: translate(-100%,-50.5%);
+	  }
+	}
+	@keyframes whitepupple-move {
+	  0%   {
+	    top: 50%;
+	  	left: 50%;
+	 	transform: translate(-50%,-50%);
+	  }
+	  100% {
+	    top: 50%;
+	  	left: 50%;
+	 	transform: translate(0%,-50%);
+	  }
+	}
+	
+	
 	#div2 {
 	  top: 50px;
 	  left: 50px;
@@ -43,10 +99,10 @@
 	  animation-delay: -2s;
 	}
 	#dive1{
-		background-color: yellow;
+		background-color: #020202;
 	}
 	#dive3{
-		background-color: yellow;
+		background-color: #020202;
 	}
 	#floatMenu {
 		position: absolute;
@@ -70,15 +126,27 @@
 	}
 </style>
 </head>
-<body id="topbody">
+<body id="topbody" style="background-color: black;">
+	<%@ include file="bar/gnb.jsp"%>
 	<div id="floatMenu" onclick="window.scrollTo(0,0)">
 		top
 	</div>
-	
-	<div>
+
+	<div class="main-img-div">
+		<div id="noback-img" >
+			<img class="main-img" alt="엑박" src="/resources/img/noback2.png">
+		</div>
+		<div id="pink-img" >
+			<img class="main-img" alt="엑박" src="/resources/img/pink2.png">
+		</div>
+		<div id="whitepupple-img" >
+			<img class="main-img" alt="엑박" src="/resources/img/whitepupple2.png">
+		</div>
+	</div>
+	<!-- <div>
 		<div id="div2" style="cursor: pointer;" onclick="location.href='https://naver.com';"><a href="#">hello</a></div>
 		<div id="div3"><a href="#">hello2</a></div>
-	</div>
+	</div> -->
 	<button onclick="fnMove('1')">div1로 이동</button>
     <button onclick="fnMove('2')">div2로 이동</button>
     <button onclick="fnMove('3')">div3로 이동</button>
