@@ -9,12 +9,18 @@
 
 <!-- Bootstrap CSS -->
 <link href="/resources/css/bootstrap.css" rel="stylesheet">
+
+<style type="text/css">
+	#topdiv{
+		margin-top: 5px;
+	}
+</style>
 </head>
 
 
 <body>
-	<nav class="navbar navbar-default" role="navigation">
-		<div class="container-fluid">
+	<nav id="topdiv" class="navbar navbar-default col-md-6 col-md-offset-3"  role="navigation">
+		<div class="container-fluid" >
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed"
@@ -64,20 +70,7 @@
 					</div>
 					<button type="submit" class="btn btn-default pull-right">Submit</button>
 				</form>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#">Link</a></li>
-					<li class="dropdown"><a href="#" class="dropdown-toggle"
-						data-toggle="dropdown" role="button" aria-expanded="false">Dropdown
-							<span class="caret"></span>
-					</a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul></li>
-				</ul>
+
 			</div>
 			<!-- /.navbar-collapse -->
 		</div>

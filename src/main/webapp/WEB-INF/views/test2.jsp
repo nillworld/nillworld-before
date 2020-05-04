@@ -6,39 +6,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>메인 페이지 test</title>
 <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-<script src="/resources/js/bootstrap.min.js"></script>
 <style>
 	.padding1000{
 		width: 100%;
 		height: 700px;
 	}
+	.main-img-div{
+		top: 10%;
+	  	left: 50%;
+	 	transform: translate(-50%,-50%);
+	 	position: relative;
+		width: 100%;
+		height: 100%;
+		max-width:700px;
+		max-height: 480px;
+		min-height: 270px;
+	}
 	.main-img{
 		width: 100%;
+		max-width:400px;
+	}
+	.topage{
+	  	left: 10%;
+		width: 100%;
+		position:relative;
+		transform: translate(-50%,0%);
 		max-width:700px;
-
+		max-height: 480px;
+		min-height: 270px;
+		background-color: white;
 	}
 	#noback-img {
-		top: 50%;
+		top: 10%;
 	  	left: 50%;
 	 	transform: translate(-50%,-50%);
 	 	position: absolute;
 	 	z-index: 8;
 	}
 	#pink-img {
-		
-		top: 50%;
+		top: 10%;
 	  	left: 50%;
-	 	transform: translate(-100%,-50.5%);
+	 	transform: translate(-100%,-50.7%);
 	 	position: absolute;
 	 	animation-name: pink-move;
 	 	animation-duration: 2s;
 	  	animation-timing-function: ease-in-out;
-	  	z-index: 7;
+	  	z-index: 6;
 	}
 	#whitepupple-img {
 		
-		top: 50%;
+		top: 10%;
 	  	left: 50%;
 	 	transform: translate(0%,-50%);
 	 	position: absolute;
@@ -48,24 +65,24 @@
 	}
 	@keyframes pink-move {
 	  0%   {
-	    top: 50%;
+	    top: 10%;
 	  	left: 50%;
-	 	transform: translate(-50%,-50.5%);
+	 	transform: translate(-50%,-50.7%);
 	  }
 	  100% {
-	    top: 50%;
+	    top: 10%;
 	  	left: 50%;
-	 	transform: translate(-100%,-50.5%);
+	 	transform: translate(-100%,-50.7%);
 	  }
 	}
 	@keyframes whitepupple-move {
 	  0%   {
-	    top: 50%;
+	    top: 10%;
 	  	left: 50%;
 	 	transform: translate(-50%,-50%);
 	  }
 	  100% {
-	    top: 50%;
+	    top: 10%;
 	  	left: 50%;
 	 	transform: translate(0%,-50%);
 	  }
@@ -131,18 +148,24 @@
 	<div id="floatMenu" onclick="window.scrollTo(0,0)">
 		top
 	</div>
+			<div style="padding-top: 300px">
+			</div>
 
 	<div class="main-img-div">
-		<div id="noback-img" >
-			<img class="main-img" alt="엑박" src="/resources/img/noback2.png">
-		</div>
-		<div id="pink-img" >
-			<img class="main-img" alt="엑박" src="/resources/img/pink2.png">
-		</div>
-		<div id="whitepupple-img" >
-			<img class="main-img" alt="엑박" src="/resources/img/whitepupple2.png">
-		</div>
+		<div>
+			<div id="noback-img" >
+				<img class="main-img" alt="엑박" src="/resources/img/noback2.png">
+			</div>
+			<div id="pink-img" >
+				<img class="main-img" alt="엑박" src="/resources/img/pink2.png">
+			</div>
+			<div id="whitepupple-img" >
+				<img class="main-img" alt="엑박" src="/resources/img/whitepupple2.png">
+			</div>
+		</div>		
 	</div>
+		<div class="topage" >
+		</div>
 	<!-- <div>
 		<div id="div2" style="cursor: pointer;" onclick="location.href='https://naver.com';"><a href="#">hello</a></div>
 		<div id="div3"><a href="#">hello2</a></div>
