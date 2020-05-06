@@ -12,7 +12,7 @@
 		height: 700px;
 	}
 	.main-img-div{
-		top: 10%;
+		
 	  	left: 50%;
 	 	transform: translate(-50%,-50%);
 	 	position: relative;
@@ -27,7 +27,7 @@
 		max-width:400px;
 	}
 	.topage{
-	  	left: 10%;
+	  	
 		width: 100%;
 		position:relative;
 		transform: translate(-50%,0%);
@@ -37,14 +37,14 @@
 		background-color: white;
 	}
 	#noback-img {
-		top: 10%;
+		
 	  	left: 50%;
 	 	transform: translate(-50%,-50%);
 	 	position: absolute;
 	 	z-index: 8;
 	}
 	#pink-img {
-		top: 10%;
+		
 	  	left: 50%;
 	 	transform: translate(-100%,-50.7%);
 	 	position: absolute;
@@ -55,7 +55,7 @@
 	}
 	#whitepupple-img {
 		
-		top: 10%;
+		
 	  	left: 50%;
 	 	transform: translate(0%,-50%);
 	 	position: absolute;
@@ -65,24 +65,24 @@
 	}
 	@keyframes pink-move {
 	  0%   {
-	    top: 10%;
+	    
 	  	left: 50%;
 	 	transform: translate(-50%,-50.7%);
 	  }
 	  100% {
-	    top: 10%;
+	    
 	  	left: 50%;
 	 	transform: translate(-100%,-50.7%);
 	  }
 	}
 	@keyframes whitepupple-move {
 	  0%   {
-	    top: 10%;
+	    
 	  	left: 50%;
 	 	transform: translate(-50%,-50%);
 	  }
 	  100% {
-	    top: 10%;
+	    
 	  	left: 50%;
 	 	transform: translate(0%,-50%);
 	  }
@@ -148,9 +148,8 @@
 	<div id="floatMenu" onclick="window.scrollTo(0,0)">
 		top
 	</div>
-			<div style="padding-top: 300px">
-			</div>
-
+	<div style="padding-top: 20%"></div>
+	<div style="padding-top: 250px"></div>
 	<div class="main-img-div">
 		<div>
 			<div id="noback-img" >
@@ -164,8 +163,17 @@
 			</div>
 		</div>		
 	</div>
-		<div class="topage" >
-		</div>
+	
+	<div class="topage" >
+	</div>
+	
+	<div class="col-md-4" style="background: green; border: 1px solid white">1</div>
+	<div class="col-md-3" style="background: green; border: 1px solid white">2</div>
+	<div class="col-md-6" style="background: green; border: 1px solid white">
+		<div class="col-md-4" style="background: green; border: 1px solid white">3</div>
+		<div class="col-md-3" style="background: green; border: 1px solid white">3</div>
+	</div>
+	
 	<!-- <div>
 		<div id="div2" style="cursor: pointer;" onclick="location.href='https://naver.com';"><a href="#">hello</a></div>
 		<div id="div3"><a href="#">hello2</a></div>
