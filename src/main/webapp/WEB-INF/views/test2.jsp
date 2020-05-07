@@ -173,7 +173,10 @@
 		<div class="col-md-4" style="background: green; border: 1px solid white">3</div>
 		<div class="col-md-3" style="background: green; border: 1px solid white">3</div>
 	</div>
-	
+	<div class="col-xs-6 col-md-4" style="background: green; border: 1px solid white">col-xs-6 col-md-4</div>
+	<div class="col-xs-6 col-lg-4" style="background: green; border: 1px solid white">col-xs-6 col-lg-4</div>
+	<div class="col-sm-5 col-md-offset-2 col-lg-6 col-lg-offset-0" style="background: green; border: 1px solid white">col-sm-5 col-md-offset-2 col-lg-6 col-lg-offset-0</div>
+	<div class="navbar navbar-default" style="background: green; border: 1px solid white">navbar navbar-default col-md-6 col-md-offset-3</div>
 	<!-- <div>
 		<div id="div2" style="cursor: pointer;" onclick="location.href='https://naver.com';"><a href="#">hello</a></div>
 		<div id="div3"><a href="#">hello2</a></div>
