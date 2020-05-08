@@ -181,6 +181,7 @@
 		<div id="div2" style="cursor: pointer;" onclick="location.href='https://naver.com';"><a href="#">hello</a></div>
 		<div id="div3"><a href="#">hello2</a></div>
 	</div> -->
+    <div id="dive3" class="col-xs-6 col-md-4" style="background: white; border: 1px solid gray; width: 100px;" onclick="http://bootstrapk.com/getting-started/#template">부트스트랩 예제 보기</div>
 	<button onclick="fnMove('1')">div1로 이동</button>
     <button onclick="fnMove('2')">div2로 이동</button>
     <button onclick="fnMove('3')">div3로 이동</button>
